@@ -7,6 +7,11 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
     />
+    <link rel="shortcut icon" type="image/png" href="imgs/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/app.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
@@ -15,15 +20,17 @@
   </head>
   <body>
     <div id="headerWrapper" ng-controller="HeaderCtrl">
-      <span class="logo pull-left">{{appDetails.title}}</span>
+      <span class="logo pull-left"
+        >{{appDetails.title}} <i class="fa fa-book"></i
+      ></span>
       <span class="tagline pull-left">{{appDetails.tagline}}</span>
       <div class="nav-wrapper pull-left">
         <ul class="nav nav-pills">
           <li ng-class="{active: nav.isActive('/books')}">
-            <a href="#/books">Books</a>
+            <a href="#/books"><b style="font-size: 25px;">Books</b></a>
           </li>
           <li ng-class="{active: nav.isActive('/kart')}">
-            <a href="#/kart">Kart</a>
+            <a href="#/kart"><b style="font-size: 25px;">Kart</b></a>
           </li>
         </ul>
       </div>
